@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "register": "node commands.js",
-    "dev": "nodemon app.js"
+    "dev": "DEBUG=express:* dotenv -e .env nodemon app.js"
   },
   "author": "Shay DeWael",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "node-fetch": "^3.3.0"
   },
   "devDependencies": {
+    "dotenv-cli": "^7.3.0",
     "nodemon": "^2.0.15"
   }
 }
